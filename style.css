@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('Raleway-Regular.ttf');
+}
+*
+{
+    font-family: 'raleway-regular';
+}
+nav 
+{
+    display:flex;
+    color : blue
+}
+section
+{
+    display:flex;
+    background-color:#f2f2f2 ;
+}
+
