@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
+    <link rel="icon" type="image/svg" href="images\logo\Reservia.svg" />
 </head>
 
 <body>
     <header>
-        <p><img src="images/logo/reservia.svg" alt="logo de l'entreprise" /></p>
+        <p><img src="images\logo\Reservia@3x.png" alt="logo de l'entreprise" /></p>
         <nav>
             <ul>
                 <li><a href="#hébergements">Hébergements</a></li>
@@ -19,43 +20,122 @@
         </nav>
         <h1>Trouvez votre hébergement pour des vacances de rève</h1>
         <p>en plein centre ville ou en pleine nature </p>
+        <form method="post" action="">
+            <p>
+                <label for="ville">Votre ville</label> : <input type="text" name="ville" id="ville"
+                    placeholder="Marseille, France" />
+                <input type="submit" value="Envoyer" />
+
+            </p>
+        </form>
+        <section id="filtres">
+            <h3>Filtres</h3>
+            <ul>
+                <li><a href=""></a>Economique</li>
+                <li><a href=""></a>Familial</li>
+                <li><a href=""></a>Romantique</li>
+                <li><a href=""></a>Animaux autorisés</li>
+            </ul>
+            <p id="nblogements">Plus de 500 logements sont disponibles dans cette ville</p>
+        </section>
     </header>
     <section id="hebergements">
         <h2>Hebergements à Marseille</h2>
         <figure><img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Auberge de la Cannebière"></figure>
+                alt="Auberge de la Cannebière">
+            <figcaption>
+                <h3>Auberge de la Cannebière</h3>
+                <p>Nuit à partir de 25 €</p>
+            </figcaption>
+        </figure>
         <figure><img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel du port">
+            <figcaption>
+                <h3>Hôtel du port</h3>
+                <p>Nuit à partir de 52 €</p>
+            </figcaption>
         </figure>
         <figure><img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+            <figcaption>
+                <h3>Hôtel les mouettes</h3>
+                <p>Nuit à partir de 76 €</p>
+            </figcaption>
         </figure>
         <figure><img src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+            <figcaption>
+                <h3>Hôtel de la mer</h3>
+                <p>Nuit à partir de 46 €</p>
+            </figcaption>
         </figure>
         <figure><img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier">
+            <figcaption>
+                <h3>Auberge le Panier</h3>
+                <p>Nuit à partir de 23 €</p>
+            </figcaption>
         </figure>
         <figure><img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+            <figcaption>
+                <h3>Hôtel chez Amina</h3>
+                <p>Nuit à partir de 96 €</p>
+            </figcaption>
         </figure>
     </section>
     <section id="activités">
         <h2>Activités à Marseille</h2>
         <figure><img src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                alt="vieux port de marseille"> </figure>
+                alt="vieux port de marseille">
+            <figcaption>
+                <h3>Vieux Port</h3>
+            </figcaption>
+        </figure>
         <figure><img src="images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Promègues">
+            <figcaption>
+                <h3>Fort de Promègues</h3>
+            </figcaption>
         </figure>
-        <figure><img src="images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"></figure>
+        <figure><img src="images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+            <figcaption>
+                <h3>Îles du Frioul</h3>
+            </figcaption>
+        </figure>
         <figure><img src="images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                alt="Parc National des Calanques"></figure>
-        <figure><img src="images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de Lagarde">
+                alt="Parc National des Calanques">
+            <figcaption>
+                <h3>Parc National des Calanques</h3>
+            </figcaption>
         </figure>
-        <figure><img src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"></figure>
+        <figure><img src="images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
+            <figcaption>
+                <h3>Notre-Dame-de-la-Garde</h3>
+            </figcaption>
+        </figure>
+        <figure><img src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+            <figcaption>
+                <h3>Parc Longchamp</h3>
+            </figcaption>
+        </figure>
     </section>
     <section id="populaires">
         <h2>les plus populaires </h2>
         <figure><img src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                alt="Hôtel le soleil du matin"></figure>
+                alt="Hôtel le soleil du matin">
+            <figcaption>
+                <h3>Hôtel le soleil du matin</h3>
+                <p>Nuit à partir de 128 €</p>
+            </figcaption>
+        </figure>
         <figure><img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau">
+            <figcaption>
+                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                <p>Nuit à partir de 71 €</p>
+            </figcaption>
         </figure>
         <figure><img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                alt="Hôtel tout bleu et tout Blanc"></figure>
+                alt="Hôtel tout bleu et tout Blanc">
+            <figcaption>
+                <h3>Hôtel tout bleu et tout Blanc</h3>
+                <p>Nuit à partir de 68 €</p>
+            </figcaption>
+        </figure>
     </section>
     <footer>
         <h3>A Propos</h3>
@@ -74,7 +154,6 @@
         <ul>
             <li><a href="">Centre d'aide</a></li>
             <li><a href="">Nous contacter</a></li>
-
         </ul>
 
     </footer>
