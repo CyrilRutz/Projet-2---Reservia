@@ -5,15 +5,48 @@
 *
 {
     font-family: 'raleway-regular';
+    font-size: 1em;
 }
-nav 
+nav
 {
     display:flex;
-    color : blue
+    color : blue;
+
 }
+#filtres
+{
+    display:flex;
+    font-weight: bolder;
+}
+#filtres ul
+{
+    display:flex;
+    list-style-type:none;
+
+}
+#filtres li
+{
+
+    font-weight: bold;
+    margin:16px;
+    border : solid black;
+
+
+}
+
+#filtres i
+{
+    font-size : 1.3em;    
+    padding:16px;
+    border :solid black 1px;
+    border-radius:150px;
+    color:#0065FC;
+    background-color:#DEEBFF;
+
+}
+
 section
 {
-    display:flex;
     background-color:#f2f2f2 ;
 }
 
