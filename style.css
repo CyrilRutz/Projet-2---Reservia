@@ -5,127 +5,85 @@
 }
 *
 {
-    font-family: 'raleway-regular';
+    font-family:'raleway-regular';
 }
 body
 {
-    max-width: 1024px; 
+    display:flex;
+    flex-direction: column;
+    align-items:center;
 }
 header
 {
-    display: flex;
+
+    display:flex;
+    flex-wrap:wrap;
+    width:95%;
+}
+header h1
+{
+    width:100%;
+}
+nav
+{
+    
+    display:flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
 }
-
 nav ul
 {
     display:flex;
     list-style-type:none;
-    
+}
 
-}
-nav li
-{
-    padding-left: 15%;
-}
 form
 {
-    height:20px;
-    margin-bottom:50px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    background-color:tomato;
 }
-#ville
+form p
 {
-    
-    font-size:1.5em;
-    font-weight:bold;
-    padding:20px;
-    margin-left:0;
-    margin-right:0;
-    border: solid 1px #f2f2f2;
+    width:100%;
 }
-#envoyer
-{
-    font-size:1.5em;
-    font-weight: bold;
-    color:white;
-    padding:20px;
-    margin-left: 0px;
-    margin-right:0;
-    border: solid 1px #0065fc;
-    border-radius: 0 15px 15px 0;
-    background-color: #0065FC;
-}
-#logements::before
-{
-    
-    font-family:"Font Awesome 5 free";
-    font-weight: bold;
-    content:"\f129";
-    color:#0065fc; 
-    border: solid 2px #f2f2f2;
-    border-radius:100%;
-    padding:10px;
-    
-}
-form i
-{
-
-    padding:22px;
-    border: solid 1px #f2f2f2;
-    border-radius: 15px 0 0 15px;
-    background-color: #f2f2f2;
-    color:#0065FC;    
-    font-size: 1.5em;
-    margin-bottom: 50px;
-}
-#filtres
+form ul 
 {
     display:flex;
-    font-size: 1.5em;
-    margin-top:50px;
-    background-color: white;
+    list-style-type: none;
 }
-#filtres ul
+figure,aside,section,img
+{
+    border-radius: 20px;
+}
+#accomodations
 {
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    list-style-type:none;
+    background-color:#f2f2f2 ;
 }
-#filtres li
+#accomodations h2,p
 {
-    display:flex;
-    font-weight: bold;
-    margin:25px;
-    border : solid #f2f2f2;
-    height : 50px;
+    width:100%;
 }
-#filtres i
+#accomodations figure
 {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 52px;
-    width: 52px;
-    font-size : 1.3em;    
-    margin-left: -25px;
-    border :solid black 3px;
-    border-radius:150px;
-    color:#0065FC;
-    background-color:#DEEBFF;
-}
-
-section
-{
-    background-color:#f2f2f2;
-    border-radius:25px;
-}
-
-figure
-{
-    border : solid 3px white;
-    border-radius:25px;
-    background-color: white;
+    height: 150px;  
+    width: 200px;
     padding:3px;
+    margin: auto;
 }
+#accomodations figure img
+{
+    height: 150px;  
+    width: 200px;
+    object-fit:cover;
+}
+
+
+
