@@ -1,4 +1,8 @@
 /* Box sizing rules */
+html
+{
+  font-size: 62.5%;
+}
 *,
 *::before,
 *::after {
