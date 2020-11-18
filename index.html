@@ -7,8 +7,8 @@
     <link href="fontawesome-free-5.14.0-web/css/fontawesome.css" rel="stylesheet" />
     <link href="fontawesome-free-5.14.0-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-5.14.0-web/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="resetstylesheet.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg" href="images/logo/reservia.svg" />
     <title>Reservia</title>
 
@@ -22,17 +22,17 @@
 
                 <ul>
                     <li><a href="#accomodations">Hébergements</a></li>
-                    <li><a href="#activities">activités</a></li>
-                    <li><a href="#">s'inscrire</a></li>
+                    <li><a href="#activities">Activités</a></li>
+                    <li><a href="#" id="inscription">S'inscrire</a></li>
                 </ul>
             </nav>
 
             <h1>Trouvez votre hébergement pour des vacances de rève</h1>
-            <p>en plein centre ville ou en pleine nature </p>
+            <p>En plein centre ville ou en pleine nature </p>
 
             <form method="post" action="#">
 
-                <p>
+                <p id="searchform">
                     <label for="city"><i class="fas fa-map-marker-alt"></i></label><input type="text" name="city"
                         id="city" placeholder="Marseille, France" />
                     <input type="submit" value="Rechercher" id="search" />
@@ -57,8 +57,8 @@
                     <figcaption>
                         <h3>Auberge de la Cannebière</h3>
                         <p>Nuit à partir de 25 €</p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
@@ -68,8 +68,8 @@
                     <figcaption>
                         <h3>Hôtel du port</h3>
                         <p>Nuit à partir de 52 €</p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
@@ -79,8 +79,8 @@
                     <figcaption>
                         <h3>Hôtel les mouettes</h3>
                         <p>Nuit à partir de 76 €</p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
@@ -90,8 +90,8 @@
                     <figcaption>
                         <h3>Hôtel de la mer</h3>
                         <p>Nuit à partir de 46 €</p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
@@ -101,8 +101,8 @@
                     <figcaption>
                         <h3>Auberge le Panier</h3>
                         <p>Nuit à partir de 23 €</p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
@@ -112,12 +112,12 @@
                     <figcaption>
                         <h3>Hôtel chez Amina</h3>
                         <p>Nuit à partir de 96 €</p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
-            <p><a href="#"> afficher plus</a>
+            <p><a href="#"> Afficher plus</a>
             </p>
         </section>
         <aside id="popular">
@@ -129,7 +129,7 @@
                         <h3>Hôtel le soleil du matin</h3>
                         <p>Nuit à partir de 128 €</p>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
@@ -140,18 +140,18 @@
                         <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                         <p>Nuit à partir de 71 €</p>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
             <a href="#">
-                <figure><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                <figure><img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="Hôtel tout bleu et tout Blanc">
                     <figcaption>
                         <h3>Hôtel tout bleu et tout Blanc</h3>
                         <p>Nuit à partir de 68 €</p>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </figcaption>
                 </figure>
             </a>
@@ -207,28 +207,30 @@
         </section>
     </div>
     <footer>
-        <article>
-            <h3>A Propos</h3>
-            <ul>
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-        </article>
-        <article>
-            <h3>Nos Hébergements</h3>
-            <ul>
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Soumettre votre hotel</a></li>
-            </ul>
-        </article>
-        <article>
-            <h3>Assistance</h3>
-            <ul>
-                <li><a href="#">Centre d'aide</a></li>
-                <li><a href="#">Nous contacter</a></li>
-            </ul>
-        </article>
+        <div id="articles">
+            <article>
+                <h3>A Propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Nos Hébergements</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hotel</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </article>
+        </div>
     </footer>
 </body>
 
