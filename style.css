@@ -453,15 +453,11 @@ footer
 }
 #articles article
 {
-	margin-right:19rem;
+	margin-right:18rem;
 }
 footer article li
 {
 	height: 2rem;
-}
-@media @media screen and (max-width:1023px)
-{
-
 }
 @media screen and (max-width:540px)
 {

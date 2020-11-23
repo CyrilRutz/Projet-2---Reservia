@@ -1,0 +1,201 @@
+@media screen and (max-width:1023px)
+{
+	footer, #popular, #activities
+	{
+	  background-color: #f2f2f2;
+    }
+    #accomodations
+    {
+        background-color: white;
+    }
+	#main 
+	{
+		display:grid;
+		grid-template-areas: 
+		"header"
+		"popular"
+		"accomodations"
+		"activities";
+        grid-template-columns: 1fr;
+	}
+	header
+	{
+		grid-area: header;
+		display:flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+	nav
+	{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 9em;
+	}
+	nav img
+	{
+		height:100%;
+	}
+	nav ul
+	{
+		display:flex;
+		justify-content: space-between;
+		height: 100%;
+		margin-right:7rem;
+		
+	}
+	nav li
+	{
+		display:flex;
+		list-style-type: none;
+		height: 100%;
+		font-size: 1.2rem;
+	}
+	form
+	{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	#searchform{
+	
+		display:flex;
+		height:3.2em;
+		margin-top: 1.2rem;
+	}
+	.fa-map-marker-alt
+	{
+		background-color: #f2f2f2;
+		height: 100%;
+		font-size: 1.1rem;
+		border-radius: 0.8rem 0 0 0.8rem;
+		margin: none;
+	}
+	#city
+	{
+		border: solid 0.1rem #f2f2f2;
+		padding-left: 2rem;
+		font-size: 1.3rem;
+		font-weight: bold;
+		height: 100%;
+	
+	}
+	#search
+	{
+		background-color: #0065FC;
+		font-weight: bolder;
+		border:none;
+		color:white;
+		height: 100%;
+		border-radius: 0 0.8em 0.8em 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		font-size:1.3rem;
+	}
+	form ul
+	{
+		display: flex;
+		width:auto;
+		align-items: center;
+		height: 5rem;
+		margin-top: 1.7rem;
+		margin-left:2.4rem;
+	}
+	form ul li
+	{
+		display: flex;
+		margin-right:2rem;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	form ul li a , form ul li a:visited  
+	
+	{
+		font-size: 1.4rem;
+		color: black;
+		font-weight:bolder;
+		position: relative;
+		display:flex;
+		align-items: center;
+		height: 3.5rem;
+		border: solid 0.1rem #f2f2f2;
+		border-radius: 4rem;
+		padding:1.3rem;
+		padding-left: 3.5rem;
+	}
+	form i
+	{
+		
+		text-align: center;
+		font-size: 1.3rem;
+		height: 3.5rem;
+		width: 3.5rem;
+		padding-top: 1rem;
+		margin-right: -3rem;
+		background-color: #DEEBFF;
+		border-radius: 50%;
+		z-index: 1;
+	}
+	form p
+	{
+		 width:100%;
+	}
+	form h3
+	{
+        order:2;
+	}
+	#housing
+	{
+        order:1;
+	}
+	#popular
+	{
+		grid-area:popular;
+        display:flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+	}
+	#popular h2
+	{
+        padding:0;
+        width:90%;
+    }
+	#popular a
+	{
+        max-width:30%;
+    }
+	#activities
+	{
+		grid-area: activities;
+		grid-template-areas: 
+        "acttitle acttitle"
+        "actpic1 actpic2"
+        "actpic1 actpic2"
+        "actpic1 actpic2"
+        "actpic1 actpic4"
+        "actpic5 actpic4"
+        "actpic5 actpic4"
+        "actpic6 actpic4"
+        "actpic6 actpic3"; 
+        padding:2rem 2.6rem 3rem 2.6rem;
+    }
+    #activities h2
+    {
+        margin-bottom: 0;
+    }
+	footer
+	{    
+		display: flex;
+		justify-content:space-evenly;
+	}
+	#articles
+	{
+        display:flex;
+        justify-content: center;
+    }
+    #articles article
+    {
+        margin:auto;
+    }
+}
