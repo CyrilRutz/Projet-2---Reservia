@@ -1,0 +1,335 @@
+@media screen and (max-width:540px)
+{
+	:root
+	{
+		font-size:calc(1vw/0.24)
+	}
+	.desktop, #desktopsearch, #navdesktop
+	{
+		display:none;
+	}
+	.phone{
+		display:initial;
+	}
+	
+	h1 , h2
+	{
+		font-size:1.3rem;
+	}
+	h1{
+		width:95%;
+		margin-top: 1.3rem;
+	}
+	p
+	{
+		font-size: 1.03rem;
+	}
+	ul 
+	{
+		list-style-type: none;
+		padding-left: 0;
+	}
+	footer, #popular, #accomodations
+	{
+	  background-color: #f2f2f2;
+	}
+	body
+	{
+		width: 100%;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#main 
+	{
+		display:grid;
+		grid-template-areas: 
+		"header"
+		"popular"
+		"accomodations"
+		"activities";
+		grid-template-columns: 1fr;
+		width:100%;
+		justify-items: center;
+		gap:1.5rem;
+	}
+	header h1, header p, header h3{
+		margin-left: 1.1rem;
+	}
+	#navphone{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height:9rem;
+	}
+	#navphone>a{
+		display: flex;
+		padding: 1rem;
+		margin:auto 0 auto 0;
+	}
+	#navphone img{
+		height: 3rem;
+	}
+	#navphone ul
+{
+	display:flex;
+	justify-content:center;
+	margin: auto;
+	width: 100%;
+	height:2.5rem;
+}
+	#navphone li
+{
+	display:flex;
+	justify-content: center;
+	list-style-type: none;
+	font-size: 1rem;
+	width: 50%;
+}
+	#navphone li a
+{
+	border-bottom:solid 0.3em white;
+	text-align: center;
+	color:#0065FC;
+	width: 100%;
+	font-weight: normal;
+}
+	#navphone li a:hover 
+{
+	
+	border-bottom:solid 0.3rem #0065fc;
+
+}
+	#navphone li a:visited
+{
+	color:black;
+}
+
+	#inscription,#inscription:visited, #inscription:hover
+	{
+		align-self: flex-end;
+		color:#0065FC;
+		font-weight: bolder;
+		border-top:none;
+	}
+	form
+	{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		width:95%;
+		margin-top:2.1rem;
+	}
+	#searchform{
+	
+		display:flex;
+		justify-content: center;
+		height:3.2em;
+		margin:auto;
+		margin-left:1.1rem;
+		
+	}
+	.fa-map-marker-alt{
+		padding:1rem 1.3rem 1.2rem 1.2rem;
+	}
+	#city
+	{
+		border: solid 0.1rem #f2f2f2;
+		padding-left: 1.5rem;
+		width:100%;
+		font-size: 1.1rem;
+		font-weight: bold;
+		height: 100%;
+	
+	}
+	#phonesearch
+	{
+		background-color: #0065FC;
+		font-weight: bolder;
+		border:none;
+		color:white;
+		height: 100%;
+		border-radius: 0.8em 0.8em;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin-left: -0.8rem;
+		font-size:1.2rem;
+	}
+	#phonesearch i{
+		color: white;
+	}
+	form ul
+	{
+		display: flex;
+		flex-wrap: wrap;
+		width:auto;
+		align-items: center;
+		height: auto;
+		margin-left:1.1rem;
+		margin-top:0;
+	}
+	form ul li
+	{
+		display: flex;
+		margin-right:0.3rem;
+		margin-top:0.5rem;
+	}
+	
+	form ul li a , form ul li a:visited  
+	
+	{
+		font-size: 1rem;
+		padding-left: 3.5rem;
+	}
+	form li i
+	{
+		
+		text-align: center;
+		font-size: 1.1rem;
+		height: 3rem;
+		width: 3rem;
+		padding-top: 1rem;
+		margin-right: -3.2rem;
+		background-color: #DEEBFF;
+		border-radius: 50%;
+		z-index: 1;
+	}
+	
+	form h3
+	{
+		margin-top:2rem;
+		order: initial;
+		font-size: 1.2rem;
+	}
+	#housing
+	{
+		margin-top: 0.8rem;
+	}
+	figure
+	{
+		box-shadow: 0 0 0.5rem #838282;
+	}
+	figcaption h3 , figcaption p
+	{
+		font-size: 1rem;
+		margin-left: 0.8rem;
+	}
+	figcaption > h3
+	{
+		margin-top: 0.8rem;
+		font-size: 0.9rem;
+	}
+	figcaption>p:last-of-type
+	{
+		font-size: 0.8rem;
+	}
+	
+	#accomodations
+	{
+	grid-area: accomodations;
+
+	}
+	#accomodations, #activities, #popular
+	{
+		display:flex;
+		flex-direction: row;
+		flex-wrap:wrap;
+		justify-content: center;
+		border-radius: 0;
+		padding:2rem 0 2rem 0;
+		gap:1rem;
+		width: 100%;
+	}
+	#accomodations
+	{
+		padding-top:0.5rem;
+		padding-bottom: 0;
+	}
+	#accomodations h2, #accomodations>p
+	{
+		width:90%;
+		padding-bottom:1rem;
+	}
+	#accomodations>p{
+		padding-top:1rem;
+	}
+	#accomodations a, #activities a, #popular a{
+		width: 90%;
+	}
+	#accomodations figure
+	{
+		background-color: white;
+		border-radius: 1rem;
+		width:100%;
+		padding:0.3rem;
+	}
+	#accomodations figure img, #activities figure img
+	{
+		border-radius: 1rem 1rem 0 0;
+		height:7rem;
+		width:100%;
+		object-fit:cover;
+	}
+
+	#popular > i
+	{
+		font-size: 1.4rem;
+		align-self: center;
+		justify-self: end;
+		padding-top:0.5rem;
+	}
+	#popular h2, #activities h2
+	{
+		font-size:1.4rem;
+		width:80%;
+		padding-top:0.5rem;
+		padding-bottom:0.5rem;
+	}
+	#popular a
+	{
+		border-radius: 1rem;
+		height:9rem;
+		min-width:90%;
+	}
+
+	#popular figcaption p:last-of-type
+	{
+		position: absolute;
+		bottom:0px;
+	}
+	#activities
+	{
+		padding-top:0.2rem;
+	}
+	#activities h2
+	{
+		width:90%;
+	}
+	#activities a{
+		margin-bottom: 0.5rem;
+	}
+	#activities figure img
+	{
+		height:8.5rem;
+	}
+	#activities figcaption h3
+	{
+		padding-top:0.5rem;
+		padding-left:0.5rem;
+		font-size:1rem;
+	}
+	#articles
+	{
+		flex-direction: row;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		width: 90%;
+		padding-top: 3rem;
+		margin:0;
+	}
+	#articles article
+	{
+		width:100%;
+	}
+	}
+	

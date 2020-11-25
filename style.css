@@ -28,11 +28,11 @@ i:not(.fa-chart-line):not(.fa-map-marker-alt)
   
 h1 , h2
 {
-	font-size:1.6rem;
+	font-size:1.4rem;
 }
 p
 {
-	font-size: 1.18rem;
+	font-size: 1.03rem;
 }
 ul 
 {
@@ -58,25 +58,28 @@ body
 	"accomodations popular"
 	"activities activities";
 	grid-template-columns: 66% 31%;
-	gap :3em;
+	gap :2rem;
 	width:92.5%;
 }
 header
 {
 	grid-area: header;
 }
-nav
+.phone{
+	display:none
+}
+#navdesktop
 {
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 9em;
+	height: 8rem;
 }
-nav img
+#navdesktop img
 {
 	height:3.4rem;
 }
-nav ul
+#navdesktop ul
 {
 	display:flex;
 	justify-content: space-between;
@@ -85,7 +88,7 @@ nav ul
 	margin-right:7rem;
 	
 }
-nav li
+#navdesktop li
 {
 	display:flex;
 	justify-content: center;
@@ -94,9 +97,9 @@ nav li
 	list-style-type: none;
 	height: 100%;
 	width:space-around;	
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
-nav li a
+.linavdesktop
 {
 	border-top:solid 0.3em white;
 	color:#0065FC;
@@ -105,19 +108,24 @@ nav li a
 	height: 100%;
 	width:100%;
 }
-nav li a:hover 
+.linavdesktop
 {
 	
-	border-top:solid 0.3rem #428db0;
+	border-top:solid 0.3rem #0065FC;
 
 }
-nav li a:visited
+.linavdesktop
 {
 	color:black;
 }
 #inscription
 {
+	color: #0065FC;
 	font-weight: bolder;
+}
+#inscription:hover
+{
+	border-top:solid 0.3rem white;
 }
 form
 {
@@ -128,8 +136,8 @@ form
 #searchform{
 
 	display:flex;
-	height:3.2em;
-	margin-top: 1.2rem;
+	height:3em;
+	margin-top: 0.8rem;
 }
 .fa-map-marker-alt
 {
@@ -137,18 +145,19 @@ form
 	height: 100%;
 	font-size: 1.1rem;
 	border-radius: 0.8rem 0 0 0.8rem;
-	margin: none;
+	padding:1rem 1rem;
+	
 }
 #city
 {
 	border: solid 0.1rem #f2f2f2;
 	padding-left: 2rem;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	font-weight: bold;
 	height: 100%;
 
 }
-#search
+#desktopsearch
 {
 	background-color: #0065FC;
 	font-weight: bolder;
@@ -158,7 +167,7 @@ form
 	border-radius: 0 0.8em 0.8em 0;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	font-size:1.3rem;
+	font-size:1.2rem;
 }
 form ul
 {
@@ -172,7 +181,7 @@ form ul
 form ul li
 {
 	display: flex;
-	margin-right:2rem;
+	margin-right:1rem;
 	justify-content: center;
 	align-items: center;
 }
@@ -180,19 +189,19 @@ form ul li
 form ul li a , form ul li a:visited  
 
 {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	color: black;
 	font-weight:bolder;
 	position: relative;
 	display:flex;
 	align-items: center;
 	height: 3.5rem;
-	border: solid 0.1rem #f2f2f2;
+	border: solid 0.2rem #f2f2f2;
 	border-radius: 4rem;
 	padding:1.3rem;
 	padding-left: 3.5rem;
 }
-form i
+form ul li i
 {
 	
 	text-align: center;
@@ -211,7 +220,7 @@ form p
 }
 form h3
 {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	margin-left: 0.4rem;
 }
 
@@ -246,7 +255,7 @@ figcaption h3 , figcaption p
 figcaption > h3
 {
 	margin-top: 0.8rem;
-	font-size: 1.1rem;
+	font-size: 0.9rem;
 }
 #accomodations
 {
@@ -269,6 +278,7 @@ figcaption > h3
 	grid-column:span 3 ;
 	font-weight: bolder;
 	padding-top:0.5rem;
+	margin-bottom:-1rem;
 }
 #accomodations > p
 {
@@ -286,7 +296,7 @@ figcaption > h3
 #accomodations figure img
 {
 	border-radius: 1rem 1rem 0 0;
-	height:8.2rem;
+	height:7rem;
 	width:100%;
 	object-fit:cover;
 }
@@ -303,7 +313,7 @@ figcaption > h3
 }
 #popular > i
 {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	align-self: center;
 	justify-self: end;
 	padding-top:0.5rem;
@@ -317,7 +327,7 @@ figcaption > h3
 {
 	grid-column: span 3;
 	border-radius: 1rem;
-	height:10.3rem;
+	height:9rem;
 	width: 100%;
 }
 #popular figure 
@@ -400,22 +410,23 @@ figcaption > h3
 }
 .actpic1 img, .actpic4 img
 {
-	height:29rem;
+	height:25rem;
 }
 .actpic2 img
 {
-	height:13rem;
+	height:12rem;
 }
 .actpic3 img
 {
-	height:8rem;
+	height:7rem;
 }
-.actpic5 img, .actpic6 img
+.actpic5 img
 {
-	height:11rem;
+	height:9.3rem;
 }
-#activities a 
+.actpic6 img
 {
+	height:9.2rem;
 }
 #activities figure
 {
@@ -453,374 +464,9 @@ footer
 }
 #articles article
 {
-	margin-right:18rem;
+	margin-right:15rem;
 }
 footer article li
 {
 	height: 2rem;
-}
-@media screen and (max-width:540px)
-{
- 
-#accomodations
-{
-  background-color:white;
-}
-body
-{
-	width: 100%;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-}
-#main 
-{
-	display:grid;
-	grid-template-areas: 
-	"header"
-	"popular"
-	"accomodations"
-	"activities";
-	grid-template-columns: 1fr;
-	gap :3rem;
-}
-
-#inscription
-{
-	font-weight: bolder;
-}
-#searchform
-{
-	display:flex;
-	height:3.2rem;
-	margin-top: 1.2rem;
-}
-.fa-map-marker-alt
-{
-	background-color: #f2f2f2;
-	height: 100%;
-	font-size: 1.1rem;
-	border-radius: 0.8rem 0 0 0.8rem;
-	margin: none;
-}
-#city
-{
-	border: solid 0.1rem #f2f2f2;
-	padding-left: 1rem;
-	font-size: 1.1rem;
-	font-weight: bold;
-	height: 100%;
-}
-#search
-{
-	background-color: #0065FC;
-	font-weight: bolder;
-	border:none;
-	color:white;
-	height: 100%;
-	border-radius: 0 0.8rem 0.8rem 0;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	font-size:1.1rem;
-}
-form ul
-{
-	display: flex;
-	width:auto;
-	align-items: center;
-	height: 5rem;
-	margin-top: 1.5em;
-	margin-left:2rem;
-}
-form ul li
-{
-	display: flex;
-	margin-right:1.1rem;
-	justify-content: center;
-	align-items: center;
-}
-
-form ul li a , form ul li a:visited  
-
-{
-	font-size: 1.4rem;
-	color: black;
-	font-weight:bolder;
-	position: relative;
-	display:flex;
-	align-items: center;
-	height: 2.3rem;
-	border: solid 0.1rem #f2f2f2;
-	border-radius: 4rem;
-	padding:1.3rem;
-	padding-left: 3.2rem;
-}
-form i
-{
-	
-	text-align: center;
-	font-size: 1.3rem;
-	height: 3rem;
-	width: 3rem;
-	padding-top: 1rem;
-	margin-right: -3rem;
-	background-color: #DEEBFF;
-	border-radius: 50%;
-	z-index: 1;
-}
-form p
-{
-	 width:100%;
-}
-form h3
-{
-	font-size: 1.4rem;
-	margin-left: 0.4rem;
-}
-
-
-#housing::before
-{
-    
-    font-family:"Font Awesome 5 free";
-    font-weight: bold;
-    content:"\f129";
-    color:#0065fc; 
-    border: solid 0.2rem #f2f2f2;
-	border-radius:100%;
-	padding:0.3rem 0.6rem;
-	margin-right: 1rem;
-	margin-left: 0.4rem;
-	font-size:0.8rem;
-}
-#housing
-{
-	margin-top: 0.8rem;
-}
-figure
-{
-	box-shadow: 0 0 0.5rem #838282;
-}
-figcaption h3 , figcaption p
-{
-	font-size: 1rem;
-	margin-left: 0.8rem;
-}
-figcaption > h3
-{
-	margin-top: 0.8rem;
-	font-size: 1.1rem;
-}
-#accomodations
-{
-	grid-area: accomodations;
-	display:flex;
-	flex-direction: column;
-}
-#accomodations a:nth-child(even) .fa-star:last-of-type,
-#accomodations a:nth-child(5) .fa-star:nth-last-of-type(-n+2),
-#popular a:nth-last-of-type(-n+2) .fa-star:last-of-type
-{
-   color:#f2f2f2;
-}
-#accomodations > h2
-{
-	grid-column:span 3 ;
-	font-weight: bolder;
-	padding-bottom: 1em;
-	padding-top:0.5em;
-}
-#accomodations > p
-{
-	grid-column:span 3 ;
-	font-weight: bolder;
-}
-
-#accomodations figure
-{
-	background-color: white;
-	border-radius: 1em;
-	width:18em;
-	padding:0.3em;
-	margin-bottom:2.5em;  
-}
-#accomodations figure img
-{
-	border-radius: 1em 1em 0 0;
-	height:8.2em;
-	width:100%;
-	object-fit:cover;
-}
-#popular
-{
-	grid-area:popular;
-	display:grid;
-	grid-template-rows : auto;
-	grid-template-columns: 2fr 1fr 1fr;
-	border-radius: 1em;
-	padding-top:1.5em;
-	padding-left:2.6em;
-	padding-right:2.6em;
-	 
-}
-#popular > i
-{
-	font-size: 1.5em;
-	align-self: center;
-	justify-self: end;
-	padding-bottom:1em;
-	padding-top:0.5em;
-}
-#popular h2
-{
-	grid-column: span 2;
-	padding-bottom:1em;
-	padding-top:0.5em;
-}
-#popular a
-{
-	grid-column: span 3;
-	border-radius: 1em;
-	height:155px;
-	width: 100%;
-	margin-bottom: 3em;
-}
-#popular figure 
-{
-	display:flex;
-	border-radius: 1em;
-	padding:0.3em;
-	background-color: white;
-	width:100%;
-	height:100%;
-}
-#popular img
-{
-	border-radius:1em 0 0 1em;
-	height: 147px;
-	width: 139px;
-	object-fit: cover;
-}
-#popular figcaption
-{
-	position:relative;
-	height: 100%;
-	width: 100%;
-}
-#popular figcaption h3, #popular figcaption p
-{
-	width:75%;
-	margin-top:0.5em;
-	margin-left:1.3em;
-}
-
-#popular figcaption p:last-of-type
-	{
-		position: absolute;
-		bottom:0px;
-	}
-#activities
-{
-	grid-area: activities;
-	display:grid;
-	grid-template-areas: 
-	"acttitle"
-	"actpic1"
-	"actpic2"
-	"actpic3" 
-	"actpic4" 
-	"actpic5" 
-	"actpic6";
-
-	gap:2.9em;
-	border-radius: 1em;
-	margin-bottom: 2.0em;
-}
-#activities a 
-{
-	border-radius: 1em;
-}
-#activities h2{
-	grid-area: acttitle;
-}
-.actpic1
-{
-   grid-area: actpic1;
-}
-.actpic2{
-	grid-area: actpic2;
-}
-.actpic3
-{
-   grid-area: actpic3;
-}
-.actpic4{
-	grid-area: actpic4;
-}
-.actpic5
-{
-   grid-area: actpic5;
-}
-.actpic6{
-	grid-area: actpic6;
-}
-.actpic1 img, .actpic4 img
-{
-	height: 428px;
-}
-.actpic2 img
-{
-	height:200px;
-}
-.actpic3 img
-{
-	height:119px;
-}
-.actpic5 img, .actpic6 img
-{
-	height:156px;
-}
-#activities a 
-{
-	height:100%;
-}
-#activities figure
-{
-	height: 100%;
-	border-radius: 1em;
-}
-
-#activities figure img
-{
-	width:100%;
-	border-radius: 1em;
-	border-radius: 1em 1em 0 0;
-	object-fit:cover;
-}
-#activities figcaption
-{
-	height: 3.5em;
-}
-footer
-{    
-	display: flex;
-	justify-content:center;
-	align-self: stretch;
-}
-#articles
-{
-	display:flex;
-	align-items: stretch;
-	width: 92.5%;
-	padding-top: 3em;
-
-}
-#articles article
-{
-	margin-right:19em;
-}
-footer article li
-{
-	height: 2em;
-}
 }
