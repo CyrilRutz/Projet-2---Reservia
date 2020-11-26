@@ -181,6 +181,10 @@
 		font-size: 1rem;
 		padding-left: 3.5rem;
 	}
+	form ul li a:active{
+		background-color: #0065FC;
+		color:white;
+	}
 	form li i
 	{
 		
