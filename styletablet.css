@@ -10,17 +10,12 @@
     }
 	#main 
 	{
-		display:grid;
 		grid-template-areas: 
 		"header"
 		"popular"
 		"accomodations"
 		"activities";
         grid-template-columns: 1fr;
-	}
-	header
-	{
-		grid-area: header;
 	}
 	#navdesktop
 	{
@@ -75,7 +70,13 @@
     #activities h2
     {
         margin-bottom: 0;
-    }
+	}
+	#activities figcaption
+	{
+		background-color: white;
+		border-radius: 1rem;
+
+	}
 	footer
 	{    
 		display: flex;
@@ -90,5 +91,9 @@
     #articles article
     {
         margin:auto;
-    }
+	}
+	footer a, footer a:visited
+	 {
+		color:black;
+	}
 }
