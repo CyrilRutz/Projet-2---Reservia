@@ -484,6 +484,6 @@ footer article li
 {
 	height: 2rem;
 }
-footer a:visited{
+footer a, footer a:visited{
 	color:black;
 }
