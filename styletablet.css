@@ -17,24 +17,16 @@
 		"activities";
         grid-template-columns: 1fr;
 	}
-	#navdesktop
+	nav
 	{
 		display:flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 8em;
 	}
-	#navdesktop img
+	nav img
 	{
 		height:100%;
-	}
-	#navdesktop ul
-	{
-		display:flex;
-		justify-content: space-between;
-		height: 100%;
-		margin-right:7rem;
-		
 	}
 	#popular
 	{
@@ -82,13 +74,13 @@
 		display: flex;
 		justify-content:center;
 	}
-	#articles
+	#informations
 	{
         display:flex;
 		justify-content: space-between;
 		
     }
-    #articles article
+    #informations .infos
     {
         margin:auto;
 	}
